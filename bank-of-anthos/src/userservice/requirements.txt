@@ -103,17 +103,17 @@ opentelemetry-api==0.13b0
     #   opentelemetry-tools-google-cloud
 opentelemetry-exporter-google-cloud==0.13b0
     # via -r requirements.in
+opentelemetry-instrumentation==0.13b0
+    # via
+    #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-sqlalchemy
+    #   opentelemetry-instrumentation-wsgi
 opentelemetry-instrumentation-flask==0.13b0
     # via -r requirements.in
 opentelemetry-instrumentation-sqlalchemy==0.13b0
     # via -r requirements.in
 opentelemetry-instrumentation-wsgi==0.13b0
     # via opentelemetry-instrumentation-flask
-opentelemetry-instrumentation==0.13b0
-    # via
-    #   opentelemetry-instrumentation-flask
-    #   opentelemetry-instrumentation-sqlalchemy
-    #   opentelemetry-instrumentation-wsgi
 opentelemetry-sdk==0.13b0
     # via
     #   -r requirements.in
@@ -141,33 +141,33 @@ py==1.10.0
     # via
     #   -r requirements.in
     #   pytest
-pyasn1-modules==0.2.8
-    # via
-    #   -r requirements.in
-    #   google-auth
 pyasn1==0.4.8
     # via
     #   -r requirements.in
     #   pyasn1-modules
     #   rsa
+pyasn1-modules==0.2.8
+    # via
+    #   -r requirements.in
+    #   google-auth
 pycparser==2.20
     # via
     #   -r requirements.in
     #   cffi
 pycryptodome==3.9.7
     # via -r requirements.in
-pyjwt==1.7.1
+pyjwt==2.4.0
     # via -r requirements.in
 pyparsing==2.4.7
     # via
     #   -r requirements.in
     #   packaging
-pytest-cov==2.10.0
-    # via -r requirements.in
 pytest==5.4.1
     # via
     #   -r requirements.in
     #   pytest-cov
+pytest-cov==2.10.0
+    # via -r requirements.in
 pytz==2020.1
     # via
     #   -r requirements.in
