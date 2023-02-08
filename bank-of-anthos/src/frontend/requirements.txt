@@ -14,7 +14,7 @@ chardet==3.0.4
     # via requests
 click==7.1.1
     # via flask
-cryptography==3.3.2
+cryptography==39.0.1
     # via -r requirements.in
 flask==1.1.2
     # via
@@ -62,6 +62,13 @@ opentelemetry-api==0.13b0
     #   opentelemetry-tools-google-cloud
 opentelemetry-exporter-google-cloud==0.13b0
     # via -r requirements.in
+opentelemetry-instrumentation==0.13b0
+    # via
+    #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-jinja2
+    #   opentelemetry-instrumentation-requests
+    #   opentelemetry-instrumentation-sqlalchemy
+    #   opentelemetry-instrumentation-wsgi
 opentelemetry-instrumentation-flask==0.13b0
     # via -r requirements.in
 opentelemetry-instrumentation-jinja2==0.13b0
@@ -72,13 +79,6 @@ opentelemetry-instrumentation-sqlalchemy==0.13b0
     # via -r requirements.in
 opentelemetry-instrumentation-wsgi==0.13b0
     # via opentelemetry-instrumentation-flask
-opentelemetry-instrumentation==0.13b0
-    # via
-    #   opentelemetry-instrumentation-flask
-    #   opentelemetry-instrumentation-jinja2
-    #   opentelemetry-instrumentation-requests
-    #   opentelemetry-instrumentation-sqlalchemy
-    #   opentelemetry-instrumentation-wsgi
 opentelemetry-sdk==0.13b0
     # via
     #   -r requirements.in
@@ -90,12 +90,12 @@ protobuf==3.12.2
     # via
     #   google-api-core
     #   googleapis-common-protos
-pyasn1-modules==0.2.8
-    # via google-auth
 pyasn1==0.4.8
     # via
     #   pyasn1-modules
     #   rsa
+pyasn1-modules==0.2.8
+    # via google-auth
 pycparser==2.20
     # via cffi
 pyjwt==1.7.1
@@ -112,7 +112,6 @@ rsa==4.7
     # via google-auth
 six==1.14.0
     # via
-    #   cryptography
     #   google-api-core
     #   google-auth
     #   grpcio
